@@ -125,7 +125,7 @@ Certifique-se de que todos os critérios de aceite são atendidos durante o dese
   - [x] Organização de pastas e arquivos
   - [x] Criação de uma instância do axios para realizar as requisições à API com base na URL base
   - [x] Utilização da biblioteca [React Query](https://react-query.tanstack.com/) para lidar com a chamada de dados
-  - [ ] Remover e resolver erros de lint
+  - [x] Remover e resolver erros de lint
 
 ## Autor
 

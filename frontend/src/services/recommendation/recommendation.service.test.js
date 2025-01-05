@@ -83,4 +83,18 @@ describe('recommendationService', () => {
     expect(recommendations).toHaveLength(1);
     expect(recommendations[0].name).toBe('RD Conversas');
   });
+
+  test('Retorna lista vazia caso não possua nenhuma recomendação encontrada', () => {
+    const formData = {
+      selectedPreferences: ['Integração com chatbots'],
+      selectedFeatures: ['Chat ao vivo e mensagens automatizadas'],
+    };
+
+    const recommendations = recommendationService.getRecommendations(
+      formData,
+      []
+    );
+
+    expect(recommendations).toHaveLength(0);
+  });
 });

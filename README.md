@@ -116,7 +116,7 @@ Certifique-se de que todos os critérios de aceite são atendidos durante o dese
 
 - Resolução:
 
-  - [ ] Implementação da lógica de recomendação de produtos com base nas preferências do usuário
+  - [x] Implementação da lógica de recomendação de produtos com base nas preferências do usuário
   - [ ] Formulário para seleção de preferências e funcionalidades desejadas
   - [ ] Tratativa para modo de recomendação "SingleProduct" e "MultipleProducts"
   - [ ] Implementação de testes unitários para as funcionalidades desenvolvidas

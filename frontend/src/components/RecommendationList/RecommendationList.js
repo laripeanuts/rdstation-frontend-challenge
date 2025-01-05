@@ -1,9 +1,9 @@
 import React from 'react';
 
-function RecommendationList({ recommendations }) {
+export function RecommendationList({ recommendations }) {
   return (
     <div>
-      <h2 className="text-lg font-bold mb-4">Lista de Recomendações:</h2>
+      <h2 className="mb-4 text-lg font-bold">Lista de Recomendações:</h2>
 
       {recommendations.length === 0 && <p>Nenhuma recomendação encontrada.</p>}
 
@@ -17,5 +17,3 @@ function RecommendationList({ recommendations }) {
     </div>
   );
 }
-
-export default RecommendationList;

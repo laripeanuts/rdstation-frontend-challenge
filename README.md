@@ -1,3 +1,22 @@
+- [Teste Técnico - Recomendador de Produtos RD Station](#teste-técnico---recomendador-de-produtos-rd-station)
+  - [Missão](#missão)
+  - [Contexto](#contexto)
+  - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+  - [Requisitos Técnicos](#requisitos-técnicos)
+    - [Familiaridade com Tailwind CSS](#familiaridade-com-tailwind-css)
+    - [Versão do Node.js](#versão-do-nodejs)
+      - [Usando `n` (Node Version Manager)](#usando-n-node-version-manager)
+      - [Usando `nvm` (Node Version Manager)](#usando-nvm-node-version-manager)
+  - [Foco do Desenvolvimento](#foco-do-desenvolvimento)
+  - [Observações Adicionais](#observações-adicionais)
+  - [Requisitos](#requisitos)
+  - [Como Executar](#como-executar)
+    - [Scripts Disponíveis](#scripts-disponíveis)
+  - [Critérios de Aceite](#critérios-de-aceite)
+  - [Solução](#solução)
+  - [Autor](#autor)
+  - [Licença](#licença)
+
 # Teste Técnico - Recomendador de Produtos RD Station
 
 Este projeto é parte do teste técnico para a vaga de desenvolvedor front-end na RD Station. O objetivo principal é implementar a lógica de recomendação de produtos RD Station em uma aplicação web existente.
@@ -30,15 +49,15 @@ O layout da aplicação foi desenvolvido utilizando Tailwind CSS. Familiaridade 
 
 Este projeto requer Node.js versão 18.3 ou superior. Se você não tem essa versão instalada, siga as instruções abaixo para instalá-la usando `n` ou `nvm`.
 
-#### Usando `n` (Node Version Manager):
+#### Usando `n` (Node Version Manager)
 
 1. Instale `n` globalmente (caso ainda não tenha): npm install -g n
 
 2. Instale e use a versão 18.3 do Node.js: n 18.3
 
-#### Usando `nvm` (Node Version Manager):
+#### Usando `nvm` (Node Version Manager)
 
-1. Instale `nvm` (caso ainda não tenha) seguindo as instruções em: https://github.com/nvm-sh/nvm
+1. Instale `nvm` (caso ainda não tenha) seguindo as instruções em: <https://github.com/nvm-sh/nvm>
 
 2. Instale e use a versão 18.3 do Node.js: nvm install 18.3 & nvm use 18.3
 
@@ -71,7 +90,7 @@ Para completar este teste, você deve concentrar-se principalmente em três arqu
 
 1. Clone o repositório: `git clone <URL_DO_REPOSITORIO>`
 2. Instale as dependências: `yarn install`
-3. Para instalar o projeto, execute o script `./install.sh` 
+3. Para instalar o projeto, execute o script `./install.sh`
 4. Inicie a aplicação: `yarn start`
 
 ### Scripts Disponíveis
@@ -93,9 +112,24 @@ Para completar este teste, você deve concentrar-se principalmente em três arqu
 
 Certifique-se de que todos os critérios de aceite são atendidos durante o desenvolvimento do projeto.
 
+## Solução
+
+- Resolução:
+
+  - [ ] Implementação da lógica de recomendação de produtos com base nas preferências do usuário
+  - [ ] Formulário para seleção de preferências e funcionalidades desejadas
+  - [ ] Tratativa para modo de recomendação "SingleProduct" e "MultipleProducts"
+  - [ ] Implementação de testes unitários para as funcionalidades desenvolvidas
+
+- Melhorias:
+  - [x] Organização de pastas e arquivos
+  - [x] Criação de uma instância do axios para realizar as requisições à API com base na URL base
+  - [x] Utilização da biblioteca [React Query](https://react-query.tanstack.com/) para lidar com a chamada de dados
+  - [ ] Remover e resolver erros de lint
+
 ## Autor
 
-Desenvolvido por [Seu Nome]
+Desenvolvido por Larissa Rabelo
 
 ## Licença
 

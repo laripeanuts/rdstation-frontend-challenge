@@ -1,13 +1,13 @@
 // Form.js
 
-import React, { useEffect } from 'react';
-import { Preferences, Features, RecommendationType } from './Fields';
-import { SubmitButton } from './SubmitButton';
-import useProducts from '../../hooks/useProducts';
+import React from 'react';
 import useForm from '../../hooks/useForm';
+import useProducts from '../../hooks/useProducts';
 import useRecommendations from '../../hooks/useRecommendations';
+import { Features, Preferences, RecommendationType } from './Fields';
+import { SubmitButton } from './SubmitButton';
 
-function Form() {
+export function Form() {
   const { preferences, features, products } = useProducts();
   const { formData, handleChange } = useForm({
     selectedPreferences: [],
@@ -28,7 +28,7 @@ function Form() {
 
   return (
     <form
-      className="max-w-md mx-auto p-4 bg-white rounded-lg shadow-md"
+      className="max-w-md p-4 mx-auto bg-white rounded-lg shadow-md"
       onSubmit={handleSubmit}
     >
       <Preferences
@@ -52,5 +52,3 @@ function Form() {
     </form>
   );
 }
-
-export default Form;

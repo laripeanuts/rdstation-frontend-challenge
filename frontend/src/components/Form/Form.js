@@ -2,28 +2,26 @@
 
 import React from 'react';
 import useForm from '../../hooks/useForm';
-import useProducts from '../../hooks/useProducts';
-import useRecommendations from '../../hooks/useRecommendations';
 import { Features, Preferences, RecommendationType } from './Fields';
 import { SubmitButton } from './SubmitButton';
 
-export function Form() {
-  const { preferences, features, products } = useProducts();
+export function Form({
+  getRecommendations,
+  setRecommendations,
+  preferences,
+  features,
+}) {
   const { formData, handleChange } = useForm({
     selectedPreferences: [],
     selectedFeatures: [],
     selectedRecommendationType: '',
   });
 
-  const { getRecommendations, recommendations } = useRecommendations(products);
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    const dataRecommendations = getRecommendations(formData);
 
-    /**
-     * Defina aqui a lógica para atualizar as recomendações e passar para a lista de recomendações
-     */
+    const dataRecommendations = getRecommendations(formData);
+    setRecommendations(dataRecommendations);
   };
 
   return (

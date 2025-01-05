@@ -1,13 +1,12 @@
 import { Form } from '../components/Form/Form';
 import { RecommendationList } from '../components/RecommendationList/RecommendationList';
+import useProducts from '../hooks/useProducts';
 import useRecommendations from '../hooks/useRecommendations';
 
 export const HomePage = () => {
-  const { recommendations, setRecommendations } = useRecommendations();
-
-  /**
-   * Dadas atualizações no formulário, necessário atualizar a lista de recomendações
-   */
+  const { preferences, features, products } = useProducts();
+  const { getRecommendations, setRecommendations, recommendations } =
+    useRecommendations(products);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
@@ -28,7 +27,12 @@ export const HomePage = () => {
           </p>
         </div>
         <div>
-          <Form />
+          <Form
+            getRecommendations={getRecommendations}
+            setRecommendations={setRecommendations}
+            preferences={preferences}
+            features={features}
+          />
         </div>
         <div>
           <RecommendationList recommendations={recommendations} />

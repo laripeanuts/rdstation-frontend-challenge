@@ -26,6 +26,7 @@ export function Form({
 
   return (
     <form
+      data-testid="form"
       className="max-w-md p-4 mx-auto bg-white rounded-lg shadow-md"
       onSubmit={handleSubmit}
     >

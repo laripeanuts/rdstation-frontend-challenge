@@ -1,10 +1,11 @@
+import { Layout } from './components/layout/Layout';
 import { HomePage } from './pages/home';
 
 function App() {
   return (
-    <main className="bg-red-300">
-      <HomePage />;
-    </main>
+    <Layout>
+      <HomePage />
+    </Layout>
   );
 }
 

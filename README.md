@@ -14,6 +14,7 @@
     - [Scripts Disponíveis](#scripts-disponíveis)
   - [Critérios de Aceite](#critérios-de-aceite)
   - [Solução](#solução)
+  - [Telas](#telas)
   - [Autor](#autor)
   - [Licença](#licença)
 
@@ -126,6 +127,12 @@ Certifique-se de que todos os critérios de aceite são atendidos durante o dese
   - [x] Criação de uma instância do axios para realizar as requisições à API com base na URL base
   - [x] Utilização da biblioteca [React Query](https://react-query.tanstack.com/) para lidar com a chamada de dados
   - [x] Remover e resolver erros de lint
+  - [x] Melhorias de layout e estilização
+  - [x] Responsividade
+
+## Telas
+
+![Telas](.github/telas.png)
 
 ## Autor
 
